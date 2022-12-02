@@ -1,0 +1,37 @@
+.customers__padding {
+  padding-block: 94px;
+  @include tablet {
+  max-width: 768px;
+}
+}
+.customers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 0;
+  margin-block: 0;
+  flex-wrap: wrap;
+justify-content: center;
+}
+.customers__logo {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  fill: var(--social-grey);
+  border-radius: 4px;
+  outline: 1px solid var(--social-grey);
+  &:hover {
+    fill: var(--main-blue);
+    transition: var(--transition-timing);
+    outline-color: var(--main-blue);
+    cursor: pointer;
+  }
+  @include tablet {
+    width: 226px;
+  }
+}
+.customers__logo--width {
+  @include tablet {
+    width: 226px;
+  }
+}
