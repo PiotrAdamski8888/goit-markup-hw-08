@@ -27,12 +27,57 @@
   <body>
     <!-- HEADER  -->
     <header class="header__font header">
+        <!-- MOBILE-MENU -->
+   <div class="mobile-menu__overlay" data-menu>
+    <div class="mobile-menu">
+      <button
+      class="mobile-menu__btn-close"
+      type="button"
+      data-menu-close
+    >
+      <svg
+        class="mobile-menu__icon-close"
+        width="40"
+        height="40"
+      >
+        <use
+          href="./images/icons.svg#icon-x"
+        ></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__nav">
+      <li>
+        <a class="mobile-menu__item mobile-menu__item--color" href="./index.html"> Agencja </a>
+      </li>
+      <li><a class="mobile-menu__item" href="./portfolio.html"> Portfolio </a></li>
+      <li><a class="mobile-menu__item" href="/kontakt"> Kontakt </a></li>
+    </ul>
+
+    <ul class="mobile-menu__contact">
+      <li class="mobile-menu__data">
+        <a class="mobile-menu__tel" href="tel:+48111111111">+48 111 111 111</a>
+      </li>
+      <li class="mobile-menu__data">
+        <a class="mobile-menu__email" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+      </li>
+    </ul>
+
+    <ul class="mobile-menu__social">
+      <li class="mobile-menu__social--accent">Instagram</li>
+      <li class="mobile-menu__social--accent">Facebook</li>
+      <li class="mobile-menu__social--accent">Twitter</li>
+      <li class="mobile-menu__social--accent">Linkedin</li>
+    </ul>
+    </div>
+   </div>
+    <!-- MOBILE-MENU END -->
       <div class="header--width">
       <div class="header--justify">
         <nav class="header__box">
           <a href="index.html" class="logo"
             ><span class="logo__color">Web</span>Studio</a
           >
+     
           <ul class="navigation">
             <li>
               <a
@@ -48,7 +93,21 @@
               <a class="navigation__link" href="#">Kontakt</a>
             </li>
           </ul>
-
+          <button
+          class="mobile-menu-btn"
+          type="button"
+          data-menu-open
+        >
+          <svg
+            class="mobile-menu-btn__icon"
+            width="40"
+            height="40"
+          >
+            <use
+              href="./images/icons.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
           <ul class="header__contacts">
             <li>
               <a class="header__contacts--link" href="#">
@@ -66,10 +125,12 @@
             </li>
           </ul>
         </nav>
+       
       </div>
     </div>
     </header>
     <!-- HEADER END  -->
+  
     <main>
       <!-- SERVICE  -->
       <section class="service">
@@ -184,7 +245,7 @@
         </ul>
       </section>
       <!-- SKILLS END-->
-      <!-- SKILLS END-->
+      <!-- TEAM-->
       <section class="team">
         <div class="container">
           <h2 class="h2__class">Nasz zespół</h2>
@@ -321,7 +382,6 @@
                 "
                   sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:450px) 480px"
                 />
-
                 <figcaption class="team__bottom">
                   <strong class="team__figcaption--strong">John Doe</strong>
                   <p class="team__figcaption--p">UI Designer</p>
@@ -353,6 +413,8 @@
           </ul>
         </div>
       </section>
+      <!-- TEAM END-->
+      <!-- CUSTOMERS-->
       <section>
         <div class="container customers__padding">
           <div>
@@ -392,7 +454,9 @@
           </div>
         </div>
       </section>
+      <!-- CUSTOMERS END-->
     </main>
+     <!-- FOOTER-->
     <footer class="footer">
       <div class="container footer--flex">
         <div class="contacts">
@@ -408,7 +472,6 @@
                 m. Warszawa, Aleje Jerozolimskie 21
               </address>
             </li>
-
             <li class="contacts__margin">
               <a class="contacts__link" href="#">info@devstudio.com</a>
             </li>
@@ -462,6 +525,8 @@
         </div>
       </div>
     </footer>
+    <!-- FOOTER END-->
+    <!-- MODAL-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" data-modal-close>
@@ -533,5 +598,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script> 
+    <!-- MODAL END-->
   </body>
 </html>

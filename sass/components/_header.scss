@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid;
   color: var(--border-white);
+  position: relative;
 }
 .header__font {
   font-weight: 500;
@@ -31,6 +32,9 @@
   @include tablet {
    flex-grow: 0.2;
    gap: 60px;
+  }
+  @include phone {
+    display: none;
   }
 }
 .navigation__link {
@@ -73,6 +77,9 @@
     margin-left: 0;
     gap: 10px;
   }
+  @include phone {
+    display: none;
+  }
 }
 .header__contacts--link {
   color: var(--main-silver);
@@ -95,6 +102,23 @@
 .header--width {
   @include tablet {
     max-width: 768px;
-    margin-inline: 0;
+    margin-inline: auto;
   }
+}
+.header__burger--open {
+  position: absolute;
+  right: 17px;
+  top: 21px;
+  @include tablet {
+    display: none;
+  }
+@include desktop {
+  display: none;
+}
+cursor: pointer;
+&:focus,
+    &:hover,
+    &:active {
+        fill: var(--main-blue);
+    }
 }
