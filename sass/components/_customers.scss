@@ -12,7 +12,11 @@
   margin-block: 0;
   flex-wrap: wrap;
 justify-content: center;
+@include phone {
+  margin-inline: 30px;
 }
+}
+
 .customers__logo {
   width: 170px;
   height: 92px;
@@ -29,9 +33,17 @@ justify-content: center;
   @include tablet {
     width: 226px;
   }
+  @include phone {
+    width: 210px;
+  }
 }
 .customers__logo--width {
   @include tablet {
     width: 226px;
   }
+@include phone {
+  width: 210px;
 }
+
+}
+

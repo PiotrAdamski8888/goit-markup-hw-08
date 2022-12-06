@@ -59,6 +59,9 @@
   @include tablet {
     margin-right: 0px;
   }
+  @include phone {
+    margin-right: unset;
+  }
 }
 .logo__color {
   color: var(--main-blue);
@@ -93,4 +96,8 @@
   @include tablet {
     margin-right: 0;
   }
+  @include phone {
+    margin-right: 0;
+  }
 }
+

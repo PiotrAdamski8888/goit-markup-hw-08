@@ -18,7 +18,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-left: revert;
+  }
+  @include phone {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -43,6 +47,4 @@
   padding-bottom: 30px;
   margin-bottom: 0px;
   margin-top: 10px;
-}
-.team-image {
 }
