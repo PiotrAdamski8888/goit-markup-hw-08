@@ -12,5 +12,8 @@
   @mixin phone {
     @media (max-width: 767px) {@content}
     }
+   @mixin micro {
+    @media (max-width: 480px) {@content}
+  }
    
   

@@ -138,6 +138,9 @@
   @include phone {
     width: 450px;
   }
+  @include micro {
+    width: 100%;
+  }
 }
 .subscribe__button {
   background: var(--main-blue);
@@ -159,4 +162,9 @@
 .subscribe__button-icon {
   margin-left: 24px;
   fill: var(--main-white);
+}
+.subscribe--block-width {
+  @include micro {
+  width: 100%;
+}
 }

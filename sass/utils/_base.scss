@@ -12,6 +12,11 @@
     line-height: 1.18;
     padding-bottom: 30px;
   }
+  @include phone {
+    font-size: 28px;
+    line-height: 1.18;
+    padding-bottom: 30px;
+  }
 }
 .skills-flex {
   display: flex;

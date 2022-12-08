@@ -11,16 +11,6 @@
     display: none;
   }
 }
-.mobile-menu-btn__icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--main-black);
-}
-.mobile-menu-btn {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
 
 .menu-toggle {
   width: 40px;
@@ -37,8 +27,13 @@
   }
   @include desktop {
     display: none;
-  }
+  }  
 }
+.menu-toggle--icon:hover {
+  fill: var(--main-blue);
+  transition: var(--transition-timing);
+}
+
 //SCRIPT
 .menu {
   display: flex;
@@ -159,12 +154,14 @@
 }
 .mobile-menu__social {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style-type: none;
   font-size: 18px;
   font-weight: 500;
   color: var(--main-blue);
   padding-left: 0;
+  margin-top: 64px;
 }
 .mobile-menu__social--border:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);

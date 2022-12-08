@@ -33,6 +33,7 @@
         ),
         url("../images/Tlo-index-section_t2x.jpg");
     }
+    height: 400px;
   }
   @include phone {
     background-image: linear-gradient(
@@ -49,12 +50,16 @@
         ),
         url("../images/Tlo-index-section_p2x.jpg");
     }
+    height: 400px;
   }
 }
 
 .service__height {
   height: 600px;
   @include tablet {
+    height: 400px;
+  }
+  @include phone {
     height: 400px;
   }
 }
@@ -71,6 +76,14 @@
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   @include tablet {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    max-width: 365px;
+  }
+  @include phone {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
