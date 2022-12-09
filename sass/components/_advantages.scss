@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 94px;
+  @include tablet {
+    padding-top: 60px;
+  }
+   @include phone {
+    padding-top: 60px;
+  }
 }
 .advantage {
   display: flex;
@@ -14,10 +20,13 @@
   flex-wrap: wrap;
   @include tablet {
     margin-bottom: 45px;
+    margin-inline: 15px;
+    
   }
   @include phone {
     display: unset;
-    margin-inline: 15px ;
+    margin-inline: 15px;
+    
   }
 }
 

@@ -4,6 +4,12 @@
   @include desktop {
     display: block;
   }
+    @include tablet {
+    padding-block: 60px;
+  }
+    @include phone {
+    padding-block: 60px;
+  }
 }
 .skills__block {
   position: relative;

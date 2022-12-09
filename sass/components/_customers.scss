@@ -2,6 +2,10 @@
   padding-block: 94px;
   @include tablet {
   max-width: 768px;
+  padding-block: 60px;
+}
+@include phone {
+padding-block: 60px;
 }
 }
 .customers {

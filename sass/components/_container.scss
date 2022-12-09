@@ -3,4 +3,10 @@
     width: 100%;
     max-width: 1200px;
     padding: 0 15px;
+    @include tablet {
+padding: 0;
+    }
+       @include phone {
+padding: 0;
+    }
   }
