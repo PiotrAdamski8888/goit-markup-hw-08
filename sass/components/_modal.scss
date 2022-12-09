@@ -18,12 +18,12 @@
   transition: transform var(--transition-timing),
     opacity var(--transition-timing);
   @include tablet {
-    bottom: 60%;
+    bottom: 5%;
     width: 450px;
 height: 609px;
   }
   @include phone {
-    bottom: 60%;
+    bottom: 5%;
     width: 450px;
 height: 609px;
   }

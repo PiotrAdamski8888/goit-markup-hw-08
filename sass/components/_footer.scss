@@ -9,7 +9,7 @@
     max-width: 768px;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   @include phone {
     max-width: 768px;
@@ -22,6 +22,9 @@
 .contacts {
   margin-right: 70px;
   @include phone {
+    margin-right: unset;
+  }
+   @include phone {
     margin-right: unset;
   }
 }
