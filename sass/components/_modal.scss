@@ -12,18 +12,18 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 50%;
   top: 0;
   transform: scale(1);
   transition: transform var(--transition-timing),
     opacity var(--transition-timing);
   @include tablet {
-    bottom: 0;
+    bottom: 52%;
     width: 450px;
 height: 609px;
   }
   @include phone {
-    bottom: 0;
+    bottom: 60%;
     width: 450px;
 height: 609px;
   }
